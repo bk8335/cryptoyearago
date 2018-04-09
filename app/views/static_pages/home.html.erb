@@ -1,9 +1,9 @@
 <h1>Crypto Year Ago</h1>
-<h2>Today Bitcoin is worth $6,791, and exactly one year ago it was worth $1,124.78</h2>
-<h2>It is up 504% in the last year!</h2>
+<h2>Today Bitcoin is worth <%= number_to_currency(@price_now) %>, and exactly one year ago it was worth <%= number_to_currency(@price_year_ago)%></h2>
+<h2>It is up <%= @percentage_change %>% in the last year!</h2>
 
-<p>Bitcoin hasn't been this low since <%= Date.new(2017, 11, 14) %>, a <%= (Date.today - Date.new(2017, 11, 14)).to_i %> day low.</p>
+<!-- <p>Bitcoin hasn't been this low since <%= Date.new(2017, 11, 14) %>, a <%= (Date.today - Date.new(2017, 11, 14)).to_i %> day low.</p> -->
 
-<!-- <p>For comparison the S&P has taken XX years to rise 504%</p> -->
+<%= @json_year_ago %>
 
-<p>If you're interested in crypto then <%= link_to 'Coinbase', "https://www.coinbase.com/join/5329a2a01f2743d8c60005f2", target:"_blank"%> is the easiest place to start</p>
+<p>If you're interested in buying crypto then <%= link_to 'Coinbase', "https://www.coinbase.com/join/5329a2a01f2743d8c60005f2", target:"_blank"%> is the easiest place to start. (This is a referral link)</p>
