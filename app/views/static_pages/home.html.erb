@@ -1,5 +1,5 @@
 <div class="page-wrap">
-	<h2>Today Bitcoin is worth <%= number_to_currency(@price_now) %>.</h2>
+	<h2>Today Bitcoin is worth <%= number_to_currency(@price_now) %></h2>
 	<h2>On <%= @start_date.strftime("%B %d, %Y") %>, it was worth <%= number_to_currency(@price_year_ago)%></h2>
 	<h2>It is up <%= @percentage_change %>% in the last year!</h2>
 
