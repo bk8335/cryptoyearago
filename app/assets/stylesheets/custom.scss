@@ -1,16 +1,79 @@
 
-
 html { 
   background: url(boardwalk-clouds.jpg) no-repeat center center fixed; 
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), asset-data-url("boardwalk-clouds.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), asset-data-url("boardwalk-clouds.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  font-family: 'Nunito', sans-serif;
 }
 
-p, h1, h2, h3, h4 {
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+p, h1, h2, h3, h4, li {
 	color: white;
+	margin-left: 10px;
 	vertical-align: center;
 	horizontal-align: center;
+}
+
+ul {
+	list-style-type: none
+}
+
+li {
+	display: inline-block;
+	margin-right: 50px;
+}
+
+a {
+	text-decoration: bold;
+	color: white;
+}
+
+h2 {
+	padding: 10px;
+}
+
+.page-wrap {
+  min-height: 100%;
+  margin-left: 50px;
+  /* equal to footer height */
+  margin-bottom: -50px; 
+  margin-top: -50px; 
+  display: flex;
+  justify-content:center;
+  align-content:center;
+  flex-direction:column; 
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .site-header, .page-wrap:after {
+  height: 50px; 
+}
+
+.site-footer {
+  background: black;
+  display: flex;
+  justify-content:center;
+  align-content:center;
+  flex-direction:column; 
+}
+
+.site-header {
+	background: black;
+	display: flex;
+  justify-content:center;
+  align-content:center;
+  flex-direction:column; 
 }
